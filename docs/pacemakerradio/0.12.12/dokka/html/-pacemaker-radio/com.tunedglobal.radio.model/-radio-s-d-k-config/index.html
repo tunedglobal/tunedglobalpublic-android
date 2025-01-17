@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>RadioSDKConfig</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            PacemakerRadio
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":PacemakerRadio:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="PacemakerRadio::com.tunedglobal.radio.model/RadioSDKConfig///PointingToDeclaration//1275866364">
+  <div class="breadcrumbs"><a href="../../../index.html">PacemakerRadio</a><span class="delimiter">/</span><a href="../index.html">com.tunedglobal.radio.model</a><span class="delimiter">/</span><span class="current">RadioSDKConfig</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Radio</span><wbr></wbr><span><span>SDKConfig</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">RadioSDKConfig</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>apiKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>country<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>storeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>applicationId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>logLevel<span class="token operator">: </span><span data-unresolved-link="com.tunedglobal.automix.model/AutomixSDKLogLevel///PointingToDeclaration/">AutomixSDKLogLevel</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>allowFX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>allowAudioEffects<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>allowBackgrounds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>allowCommenting<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>allowVoiceOver<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>allowSongSuggestions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>allowInvites<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>allowPublicBroadcasts<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>allowStudio<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>fontFamily<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>titleFontSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>radioUIFontSizeHuge<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>radioUIFontSizeLarge<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>radioUIFontSizeRegular<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>radioUIFontSizeSmall<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>radioUIFontSizeTiny<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>radioUIFontSizeMatchMachine<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>textFieldFontBold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>textFieldBackgroundColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>textFieldBorderRadius<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>textFieldTextColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>textFieldPlaceholderTextColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogTitleFontBold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogTitleTextColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogDescriptionFontBold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogDescriptionTextColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogPrimaryButtonFontBold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogPrimaryButtonBackgroundColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogPrimaryButtonBorderRadius<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogPrimaryButtonTextColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogPrimaryButtonBorder<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogPrimaryButtonBorderColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogSecondaryButtonFontBold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogSecondaryButtonBackgroundColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogSecondaryButtonBorderRadius<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogSecondaryButtonTextColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogSecondaryButtonBorder<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dialogSecondaryButtonBorderColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.tunedglobal.automix.model/AutomixSDKConfig///PointingToDeclaration/">AutomixSDKConfig</span></div><p class="paragraph">RadioSDKConfig class represents the configuration for the PacemakerRadio SDK. It follows the Builder pattern.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1560065471%2FConstructors%2F1275866364" anchor-label="RadioSDKConfig" id="1560065471%2FConstructors%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-radio-s-d-k-config.html"><span>Radio</span><wbr></wbr><span><span>SDKConfig</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1560065471%2FConstructors%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">apiKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">country<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">storeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">applicationId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">logLevel<span class="token operator">: </span><span data-unresolved-link="com.tunedglobal.automix.model/AutomixSDKLogLevel///PointingToDeclaration/">AutomixSDKLogLevel</span><span class="token punctuation">, </span></span><span class="parameter ">allowFX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">allowAudioEffects<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">allowBackgrounds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">allowCommenting<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">allowVoiceOver<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">allowSongSuggestions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">allowInvites<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">allowPublicBroadcasts<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">allowStudio<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">fontFamily<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">titleFontSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">radioUIFontSizeHuge<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">radioUIFontSizeLarge<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">radioUIFontSizeRegular<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">radioUIFontSizeSmall<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">radioUIFontSizeTiny<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">radioUIFontSizeMatchMachine<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">textFieldFontBold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">textFieldBackgroundColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">textFieldBorderRadius<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">textFieldTextColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">textFieldPlaceholderTextColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dialogTitleFontBold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">dialogTitleTextColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dialogDescriptionFontBold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">dialogDescriptionTextColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dialogPrimaryButtonFontBold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">dialogPrimaryButtonBackgroundColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dialogPrimaryButtonBorderRadius<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">dialogPrimaryButtonTextColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dialogPrimaryButtonBorder<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">dialogPrimaryButtonBorderColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dialogSecondaryButtonFontBold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">dialogSecondaryButtonBackgroundColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dialogSecondaryButtonBorderRadius<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">dialogSecondaryButtonTextColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dialogSecondaryButtonBorder<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">dialogSecondaryButtonBorderColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="35219838%2FClasslikes%2F1275866364" anchor-label="Builder" id="35219838%2FClasslikes%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-builder/index.html"><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="35219838%2FClasslikes%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-builder/index.html">Builder</a></div><div class="brief "><p class="paragraph">Builder class for creating <a href="index.html">RadioSDKConfig</a> instances.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="693732945%2FProperties%2F1275866364" anchor-label="allowAudioEffects" id="693732945%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-audio-effects.html"><span>allow</span><wbr></wbr><span>Audio</span><wbr></wbr><span><span>Effects</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="693732945%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="allow-audio-effects.html">allowAudioEffects</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1272112904%2FProperties%2F1275866364" anchor-label="allowBackgrounds" id="-1272112904%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-backgrounds.html"><span>allow</span><wbr></wbr><span><span>Backgrounds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1272112904%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="allow-backgrounds.html">allowBackgrounds</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-533942950%2FProperties%2F1275866364" anchor-label="allowCommenting" id="-533942950%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-commenting.html"><span>allow</span><wbr></wbr><span><span>Commenting</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-533942950%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="allow-commenting.html">allowCommenting</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1373837141%2FProperties%2F1275866364" anchor-label="allowFX" id="-1373837141%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-f-x.html"><span>allow</span><wbr></wbr><span><span>FX</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1373837141%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="allow-f-x.html">allowFX</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-828418285%2FProperties%2F1275866364" anchor-label="allowInvites" id="-828418285%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-invites.html"><span>allow</span><wbr></wbr><span><span>Invites</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-828418285%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="allow-invites.html">allowInvites</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2093995618%2FProperties%2F1275866364" anchor-label="allowPublicBroadcasts" id="2093995618%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-public-broadcasts.html"><span>allow</span><wbr></wbr><span>Public</span><wbr></wbr><span><span>Broadcasts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2093995618%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="allow-public-broadcasts.html">allowPublicBroadcasts</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="871104771%2FProperties%2F1275866364" anchor-label="allowSongSuggestions" id="871104771%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-song-suggestions.html"><span>allow</span><wbr></wbr><span>Song</span><wbr></wbr><span><span>Suggestions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="871104771%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="allow-song-suggestions.html">allowSongSuggestions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="877587463%2FProperties%2F1275866364" anchor-label="allowStudio" id="877587463%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-studio.html"><span>allow</span><wbr></wbr><span><span>Studio</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="877587463%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="allow-studio.html">allowStudio</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1756979209%2FProperties%2F1275866364" anchor-label="allowVoiceOver" id="-1756979209%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-voice-over.html"><span>allow</span><wbr></wbr><span>Voice</span><wbr></wbr><span><span>Over</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1756979209%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="allow-voice-over.html">allowVoiceOver</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1176835601%2FProperties%2F1275866364" anchor-label="apiKey" id="-1176835601%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="api-key.html"><span>api</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1176835601%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="api-key.html">apiKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-815702213%2FProperties%2F1275866364" anchor-label="applicationId" id="-815702213%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="application-id.html"><span>application</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-815702213%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="application-id.html">applicationId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="511272784%2FProperties%2F1275866364" anchor-label="country" id="511272784%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="country.html"><span><span>country</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="511272784%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="country.html">country</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2110897730%2FProperties%2F1275866364" anchor-label="dialogDescriptionFontBold" id="-2110897730%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-description-font-bold.html"><span>dialog</span><wbr></wbr><span>Description</span><wbr></wbr><span>Font</span><wbr></wbr><span><span>Bold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2110897730%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-description-font-bold.html">dialogDescriptionFontBold</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1433800178%2FProperties%2F1275866364" anchor-label="dialogDescriptionTextColor" id="1433800178%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-description-text-color.html"><span>dialog</span><wbr></wbr><span>Description</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1433800178%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-description-text-color.html">dialogDescriptionTextColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="367558155%2FProperties%2F1275866364" anchor-label="dialogPrimaryButtonBackgroundColor" id="367558155%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-primary-button-background-color.html"><span>dialog</span><wbr></wbr><span>Primary</span><wbr></wbr><span>Button</span><wbr></wbr><span>Background</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="367558155%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-primary-button-background-color.html">dialogPrimaryButtonBackgroundColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="832963118%2FProperties%2F1275866364" anchor-label="dialogPrimaryButtonBorder" id="832963118%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-primary-button-border.html"><span>dialog</span><wbr></wbr><span>Primary</span><wbr></wbr><span>Button</span><wbr></wbr><span><span>Border</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="832963118%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-primary-button-border.html">dialogPrimaryButtonBorder</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-954661367%2FProperties%2F1275866364" anchor-label="dialogPrimaryButtonBorderColor" id="-954661367%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-primary-button-border-color.html"><span>dialog</span><wbr></wbr><span>Primary</span><wbr></wbr><span>Button</span><wbr></wbr><span>Border</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-954661367%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-primary-button-border-color.html">dialogPrimaryButtonBorderColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1713577212%2FProperties%2F1275866364" anchor-label="dialogPrimaryButtonBorderRadius" id="1713577212%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-primary-button-border-radius.html"><span>dialog</span><wbr></wbr><span>Primary</span><wbr></wbr><span>Button</span><wbr></wbr><span>Border</span><wbr></wbr><span><span>Radius</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1713577212%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-primary-button-border-radius.html">dialogPrimaryButtonBorderRadius</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1798903642%2FProperties%2F1275866364" anchor-label="dialogPrimaryButtonFontBold" id="-1798903642%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-primary-button-font-bold.html"><span>dialog</span><wbr></wbr><span>Primary</span><wbr></wbr><span>Button</span><wbr></wbr><span>Font</span><wbr></wbr><span><span>Bold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1798903642%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-primary-button-font-bold.html">dialogPrimaryButtonFontBold</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1779284982%2FProperties%2F1275866364" anchor-label="dialogPrimaryButtonTextColor" id="-1779284982%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-primary-button-text-color.html"><span>dialog</span><wbr></wbr><span>Primary</span><wbr></wbr><span>Button</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1779284982%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-primary-button-text-color.html">dialogPrimaryButtonTextColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-53870019%2FProperties%2F1275866364" anchor-label="dialogSecondaryButtonBackgroundColor" id="-53870019%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-secondary-button-background-color.html"><span>dialog</span><wbr></wbr><span>Secondary</span><wbr></wbr><span>Button</span><wbr></wbr><span>Background</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-53870019%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-secondary-button-background-color.html">dialogSecondaryButtonBackgroundColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-618684996%2FProperties%2F1275866364" anchor-label="dialogSecondaryButtonBorder" id="-618684996%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-secondary-button-border.html"><span>dialog</span><wbr></wbr><span>Secondary</span><wbr></wbr><span>Button</span><wbr></wbr><span><span>Border</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-618684996%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-secondary-button-border.html">dialogSecondaryButtonBorder</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1833405637%2FProperties%2F1275866364" anchor-label="dialogSecondaryButtonBorderColor" id="-1833405637%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-secondary-button-border-color.html"><span>dialog</span><wbr></wbr><span>Secondary</span><wbr></wbr><span>Button</span><wbr></wbr><span>Border</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1833405637%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-secondary-button-border-color.html">dialogSecondaryButtonBorderColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="242308618%2FProperties%2F1275866364" anchor-label="dialogSecondaryButtonBorderRadius" id="242308618%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-secondary-button-border-radius.html"><span>dialog</span><wbr></wbr><span>Secondary</span><wbr></wbr><span>Button</span><wbr></wbr><span>Border</span><wbr></wbr><span><span>Radius</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="242308618%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-secondary-button-border-radius.html">dialogSecondaryButtonBorderRadius</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-968369996%2FProperties%2F1275866364" anchor-label="dialogSecondaryButtonFontBold" id="-968369996%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-secondary-button-font-bold.html"><span>dialog</span><wbr></wbr><span>Secondary</span><wbr></wbr><span>Button</span><wbr></wbr><span>Font</span><wbr></wbr><span><span>Bold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-968369996%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-secondary-button-font-bold.html">dialogSecondaryButtonFontBold</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1802545732%2FProperties%2F1275866364" anchor-label="dialogSecondaryButtonTextColor" id="-1802545732%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-secondary-button-text-color.html"><span>dialog</span><wbr></wbr><span>Secondary</span><wbr></wbr><span>Button</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1802545732%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-secondary-button-text-color.html">dialogSecondaryButtonTextColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1019748258%2FProperties%2F1275866364" anchor-label="dialogTitleFontBold" id="1019748258%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-title-font-bold.html"><span>dialog</span><wbr></wbr><span>Title</span><wbr></wbr><span>Font</span><wbr></wbr><span><span>Bold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1019748258%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-title-font-bold.html">dialogTitleFontBold</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-300422002%2FProperties%2F1275866364" anchor-label="dialogTitleTextColor" id="-300422002%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dialog-title-text-color.html"><span>dialog</span><wbr></wbr><span>Title</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-300422002%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="dialog-title-text-color.html">dialogTitleTextColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1176455295%2FProperties%2F1275866364" anchor-label="fontFamily" id="-1176455295%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="font-family.html"><span>font</span><wbr></wbr><span><span>Family</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1176455295%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="font-family.html">fontFamily</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="256486356%2FProperties%2F1275866364" anchor-label="logLevel" id="256486356%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="log-level.html"><span>log</span><wbr></wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="256486356%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="log-level.html">logLevel</a><span class="token operator">: </span><span data-unresolved-link="com.tunedglobal.automix.model/AutomixSDKLogLevel///PointingToDeclaration/">AutomixSDKLogLevel</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-329036100%2FProperties%2F1275866364" anchor-label="radioUIFontSizeHuge" id="-329036100%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="radio-u-i-font-size-huge.html"><span>radio</span><wbr></wbr><span>UIFont</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Huge</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-329036100%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="radio-u-i-font-size-huge.html">radioUIFontSizeHuge</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2006018776%2FProperties%2F1275866364" anchor-label="radioUIFontSizeLarge" id="2006018776%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="radio-u-i-font-size-large.html"><span>radio</span><wbr></wbr><span>UIFont</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Large</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2006018776%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="radio-u-i-font-size-large.html">radioUIFontSizeLarge</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1908245371%2FProperties%2F1275866364" anchor-label="radioUIFontSizeMatchMachine" id="-1908245371%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="radio-u-i-font-size-match-machine.html"><span>radio</span><wbr></wbr><span>UIFont</span><wbr></wbr><span>Size</span><wbr></wbr><span>Match</span><wbr></wbr><span><span>Machine</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1908245371%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="radio-u-i-font-size-match-machine.html">radioUIFontSizeMatchMachine</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-802594793%2FProperties%2F1275866364" anchor-label="radioUIFontSizeRegular" id="-802594793%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="radio-u-i-font-size-regular.html"><span>radio</span><wbr></wbr><span>UIFont</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Regular</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-802594793%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="radio-u-i-font-size-regular.html">radioUIFontSizeRegular</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1716654452%2FProperties%2F1275866364" anchor-label="radioUIFontSizeSmall" id="-1716654452%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="radio-u-i-font-size-small.html"><span>radio</span><wbr></wbr><span>UIFont</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Small</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1716654452%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="radio-u-i-font-size-small.html">radioUIFontSizeSmall</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1216847879%2FProperties%2F1275866364" anchor-label="radioUIFontSizeTiny" id="1216847879%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="radio-u-i-font-size-tiny.html"><span>radio</span><wbr></wbr><span>UIFont</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Tiny</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1216847879%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="radio-u-i-font-size-tiny.html">radioUIFontSizeTiny</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="976088010%2FProperties%2F1275866364" anchor-label="storeId" id="976088010%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="store-id.html"><span>store</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="976088010%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="store-id.html">storeId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1709081132%2FProperties%2F1275866364" anchor-label="textFieldBackgroundColor" id="1709081132%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-field-background-color.html"><span>text</span><wbr></wbr><span>Field</span><wbr></wbr><span>Background</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1709081132%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="text-field-background-color.html">textFieldBackgroundColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1410108293%2FProperties%2F1275866364" anchor-label="textFieldBorderRadius" id="-1410108293%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-field-border-radius.html"><span>text</span><wbr></wbr><span>Field</span><wbr></wbr><span>Border</span><wbr></wbr><span><span>Radius</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1410108293%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="text-field-border-radius.html">textFieldBorderRadius</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1321936987%2FProperties%2F1275866364" anchor-label="textFieldFontBold" id="-1321936987%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-field-font-bold.html"><span>text</span><wbr></wbr><span>Field</span><wbr></wbr><span>Font</span><wbr></wbr><span><span>Bold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1321936987%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="text-field-font-bold.html">textFieldFontBold</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1668963830%2FProperties%2F1275866364" anchor-label="textFieldPlaceholderTextColor" id="1668963830%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-field-placeholder-text-color.html"><span>text</span><wbr></wbr><span>Field</span><wbr></wbr><span>Placeholder</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1668963830%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="text-field-placeholder-text-color.html">textFieldPlaceholderTextColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="121779435%2FProperties%2F1275866364" anchor-label="textFieldTextColor" id="121779435%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-field-text-color.html"><span>text</span><wbr></wbr><span>Field</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="121779435%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="text-field-text-color.html">textFieldTextColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-669037314%2FProperties%2F1275866364" anchor-label="titleFontSize" id="-669037314%2FProperties%2F1275866364" data-filterable-set=":PacemakerRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":PacemakerRadio:dokkaHtml/release" data-filterable-set=":PacemakerRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title-font-size.html"><span>title</span><wbr></wbr><span>Font</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-669037314%2FProperties%2F1275866364"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":PacemakerRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="title-font-size.html">titleFontSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

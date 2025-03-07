@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AutomixIQStreamingListener</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            AutomixIQ
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":AutomixIQ:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="AutomixIQ::com.tunedglobal.automix.listeners/AutomixIQStreamingListener///PointingToDeclaration//-828240459">
+  <div class="breadcrumbs"><a href="../../../index.html">AutomixIQ</a><span class="delimiter">/</span><a href="../index.html">com.tunedglobal.automix.listeners</a><span class="delimiter">/</span><span class="current">AutomixIQStreamingListener</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Automix</span><wbr></wbr><span>IQStreaming</span><wbr></wbr><span><span>Listener</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">AutomixIQStreamingListener</a></div><p class="paragraph">AutomixSDKStreamingListener interface defines the methods to be implemented with providing AutomixIQ the information it requires to play content.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="365302593%2FFunctions%2F-828240459" anchor-label="asyncCheckDeviceStatus" id="365302593%2FFunctions%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="async-check-device-status.html"><span>async</span><wbr></wbr><span>Check</span><wbr></wbr><span>Device</span><wbr></wbr><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="365302593%2FFunctions%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="async-check-device-status.html"><span class="token function">asyncCheckDeviceStatus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">onComplete<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">onError<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../com.tunedglobal.automix.model/-automix-i-q-error/index.html">AutomixIQError</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called by AutomixIQ regularly while something is being played, this can be used if you have restrictions on the number of devices that can play simultaneously</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1834017725%2FFunctions%2F-828240459" anchor-label="asyncGetStream" id="-1834017725%2FFunctions%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="async-get-stream.html"><span>async</span><wbr></wbr><span>Get</span><wbr></wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1834017725%2FFunctions%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="async-get-stream.html"><span class="token function">asyncGetStream</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">streamingDeviceId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">sessionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">trackId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">onComplete<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">onError<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../com.tunedglobal.automix.model/-automix-i-q-error/index.html">AutomixIQError</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called by AutomixIQ to obtain the URL to stream audio from, as well as a sessionId if the URL is to be salted with one, and the URL to report playback events in case that is required.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-708850216%2FFunctions%2F-828240459" anchor-label="asyncGetTrackMetadata" id="-708850216%2FFunctions%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="async-get-track-metadata.html"><span>async</span><wbr></wbr><span>Get</span><wbr></wbr><span>Track</span><wbr></wbr><span><span>Metadata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-708850216%2FFunctions%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="async-get-track-metadata.html"><span class="token function">asyncGetTrackMetadata</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">trackId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">onComplete<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../com.tunedglobal.automix.model/-automix-i-q-track-model/index.html">AutomixIQTrackModel</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">onError<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../com.tunedglobal.automix.model/-automix-i-q-error/index.html">AutomixIQError</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called by AutomixIQ when it requires the metadata of a track in order to load it.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-433686799%2FFunctions%2F-828240459" anchor-label="asyncLogPlayEvent" id="-433686799%2FFunctions%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="async-log-play-event.html"><span>async</span><wbr></wbr><span>Log</span><wbr></wbr><span>Play</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-433686799%2FFunctions%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="async-log-play-event.html"><span class="token function">asyncLogPlayEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">trackId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">seconds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">guid<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">logPlayType<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">onComplete<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">onError<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../com.tunedglobal.automix.model/-automix-i-q-error/index.html">AutomixIQError</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Implement these if you have track streaming reporting requirements Called by AutomixIQ when playback of a track has fulfilled the requirements to report a playback event.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="310872170%2FFunctions%2F-828240459" anchor-label="cacheMetadata" id="310872170%2FFunctions%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cache-metadata.html"><span>cache</span><wbr></wbr><span><span>Metadata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="310872170%2FFunctions%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="cache-metadata.html"><span class="token function">cacheMetadata</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">metadata<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../com.tunedglobal.automix.model/-automix-i-q-track-model/index.html">AutomixIQTrackModel</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">AutomixIQ calls this function to provide a chance to cache metadata to shortcut future requests.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1042217223%2FFunctions%2F-828240459" anchor-label="getDeviceIdentifier" id="-1042217223%2FFunctions%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-device-identifier.html"><span>get</span><wbr></wbr><span>Device</span><wbr></wbr><span><span>Identifier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1042217223%2FFunctions%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="get-device-identifier.html"><span class="token function">getDeviceIdentifier</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Called by AutomixIQ to learn the identity of the device requesting to stream audio, for those services that require it. An example would be, a service that only allows one device to stream at any one time, would need to know the identity of the device to provide the stream.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="575996795%2FFunctions%2F-828240459" anchor-label="isLoggedIn" id="575996795%2FFunctions%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-logged-in.html"><span>is</span><wbr></wbr><span>Logged</span><wbr></wbr><span><span>In</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="575996795%2FFunctions%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="is-logged-in.html"><span class="token function">isLoggedIn</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Called by AutomixIQ to learn if it is allowed to stream content that is protected by some form of authentication. An example would be, an implementation via an API behind OAuth would return true if access and refresh tokens are available, false otherwise</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1668575124%2FFunctions%2F-828240459" anchor-label="logAutomixSDKDebugMessage" id="-1668575124%2FFunctions%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="log-automix-s-d-k-debug-message.html"><span>log</span><wbr></wbr><span>Automix</span><wbr></wbr><span>SDKDebug</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1668575124%2FFunctions%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="log-automix-s-d-k-debug-message.html"><span class="token function">logAutomixSDKDebugMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">logLevel<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called by AutomixIQ when it wishes to output a log message</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1739461811%2FFunctions%2F-828240459" anchor-label="onTrackDownloadCompeleted" id="-1739461811%2FFunctions%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-track-download-compeleted.html"><span>on</span><wbr></wbr><span>Track</span><wbr></wbr><span>Download</span><wbr></wbr><span><span>Compeleted</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1739461811%2FFunctions%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="on-track-download-compeleted.html"><span class="token function">onTrackDownloadCompeleted</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">trackId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called by AutomixIQ when a track has been fully downloaded. This can be used to cache the track locally on the user's device.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1017633339%2FFunctions%2F-828240459" anchor-label="onTrackDownloadProgressChanged" id="-1017633339%2FFunctions%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-track-download-progress-changed.html"><span>on</span><wbr></wbr><span>Track</span><wbr></wbr><span>Download</span><wbr></wbr><span>Progress</span><wbr></wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1017633339%2FFunctions%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="on-track-download-progress-changed.html"><span class="token function">onTrackDownloadProgressChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">trackId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">progress<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called by AutomixIQ when a track download progress has changed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="725516454%2FFunctions%2F-828240459" anchor-label="syncGetCachedTrack" id="725516454%2FFunctions%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sync-get-cached-track.html"><span>sync</span><wbr></wbr><span>Get</span><wbr></wbr><span>Cached</span><wbr></wbr><span><span>Track</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="725516454%2FFunctions%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="sync-get-cached-track.html"><span class="token function">syncGetCachedTrack</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">trackId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Called by AutomixIQ before attempting to download a track to give an opportunity to retrieve the entire unencrypted track.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-860186868%2FFunctions%2F-828240459" anchor-label="syncGetTrackMetadata" id="-860186868%2FFunctions%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sync-get-track-metadata.html"><span>sync</span><wbr></wbr><span>Get</span><wbr></wbr><span>Track</span><wbr></wbr><span><span>Metadata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-860186868%2FFunctions%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="sync-get-track-metadata.html"><span class="token function">syncGetTrackMetadata</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">trackId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.tunedglobal.automix.model/-automix-i-q-track-model/index.html">AutomixIQTrackModel</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Called by AutomixIQ before attempting to download a track to give an opportunity to retrieve the required data from an on-device cache or any other synchronous method</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

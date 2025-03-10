@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AutomixIQStatus</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            AutomixIQ
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":AutomixIQ:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="AutomixIQ::com.tunedglobal.automix.model/AutomixIQStatus///PointingToDeclaration//-828240459">
+  <div class="breadcrumbs"><a href="../../../index.html">AutomixIQ</a><span class="delimiter">/</span><a href="../index.html">com.tunedglobal.automix.model</a><span class="delimiter">/</span><span class="current">AutomixIQStatus</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Automix</span><wbr></wbr><span><span>IQStatus</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">AutomixIQStatus</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>playing<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>mixing<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playingTrackIdentifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playingTrackIndex<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playingTrackCurrentTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>-1f<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playingTrackTotalTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>-1f<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playingTrackStreamingProgress<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.0f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>replayOn<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>canSkipToPrevious<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>canSkipToNext<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>canBack<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>canPlayPause<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>canSeek<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>canReorderTracks<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>readyToPlay<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>canMixNow<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playlist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>muted<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playSpeed<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">1.0f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>normalisedVolume<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.7f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>preferredTransitionDurationSeconds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.0f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>requestedLoopTrackIdentifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>requestedPauseTrackIdentifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>vinylStartStop<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>nextTransitionDuration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.0f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>transitionStartTimeSeconds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.0f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>failedTrackLoadIdentifiers<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>mutableListOf()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>canOnOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playingTrackOriginalSessionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>explicitLyricsFiltering<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>mixId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playlistDiff<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-automix-i-q-playlist-operation/index.html">AutomixIQPlaylistOperation</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playbackMode<span class="token operator">: </span><a href="../-automix-i-q-playback-mode/index.html">AutomixIQPlaybackMode</a><span class="token operator"> = </span>AutomixIQPlaybackMode.AUTOMIX</span></span><span class="token punctuation">)</span></div><p class="paragraph">AutomixSDKStatus models the state of the AutomixSDK during playback.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1337904077%2FConstructors%2F-828240459" anchor-label="AutomixIQStatus" id="-1337904077%2FConstructors%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-automix-i-q-status.html"><span>Automix</span><wbr></wbr><span><span>IQStatus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1337904077%2FConstructors%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">playing<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">mixing<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">playingTrackIdentifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">playingTrackIndex<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">playingTrackCurrentTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>-1f<span class="token punctuation">, </span></span><span class="parameter ">playingTrackTotalTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>-1f<span class="token punctuation">, </span></span><span class="parameter ">playingTrackStreamingProgress<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.0f</span><span class="token punctuation">, </span></span><span class="parameter ">replayOn<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">canSkipToPrevious<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">canSkipToNext<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">canBack<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">canPlayPause<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">canSeek<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">canReorderTracks<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">readyToPlay<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">canMixNow<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">playlist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">muted<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">playSpeed<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">1.0f</span><span class="token punctuation">, </span></span><span class="parameter ">normalisedVolume<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.7f</span><span class="token punctuation">, </span></span><span class="parameter ">preferredTransitionDurationSeconds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.0f</span><span class="token punctuation">, </span></span><span class="parameter ">requestedLoopTrackIdentifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">requestedPauseTrackIdentifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">vinylStartStop<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">nextTransitionDuration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.0f</span><span class="token punctuation">, </span></span><span class="parameter ">transitionStartTimeSeconds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.0f</span><span class="token punctuation">, </span></span><span class="parameter ">failedTrackLoadIdentifiers<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>mutableListOf()<span class="token punctuation">, </span></span><span class="parameter ">canOnOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">playingTrackOriginalSessionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">explicitLyricsFiltering<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">mixId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">playlistDiff<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-automix-i-q-playlist-operation/index.html">AutomixIQPlaylistOperation</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">playbackMode<span class="token operator">: </span><a href="../-automix-i-q-playback-mode/index.html">AutomixIQPlaybackMode</a><span class="token operator"> = </span>AutomixIQPlaybackMode.AUTOMIX</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-30659423%2FProperties%2F-828240459" anchor-label="canBack" id="-30659423%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-back.html"><span>can</span><wbr></wbr><span><span>Back</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-30659423%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="can-back.html">canBack</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-123778226%2FProperties%2F-828240459" anchor-label="canMixNow" id="-123778226%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-mix-now.html"><span>can</span><wbr></wbr><span>Mix</span><wbr></wbr><span><span>Now</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-123778226%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="can-mix-now.html">canMixNow</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Represents whether the &quot;next&quot; action would do a transition or a regular skip.     Depends on whether we had enough time to analyse the next track or not.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1066713122%2FProperties%2F-828240459" anchor-label="canOnOff" id="1066713122%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-on-off.html"><span>can</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Off</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1066713122%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="can-on-off.html">canOnOff</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></div><div class="brief "><p class="paragraph">Represents if AutomixIQ can be turned on or off. It is true if no other on/off action is ongoing, false otherwise.     When this switch is true, on/off actions return an error.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="762393040%2FProperties%2F-828240459" anchor-label="canPlayPause" id="762393040%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-play-pause.html"><span>can</span><wbr></wbr><span>Play</span><wbr></wbr><span><span>Pause</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="762393040%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="can-play-pause.html">canPlayPause</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Represents whether AutomixIQ is ready to receive a play or pause command.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2028472273%2FProperties%2F-828240459" anchor-label="canReorderTracks" id="-2028472273%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-reorder-tracks.html"><span>can</span><wbr></wbr><span>Reorder</span><wbr></wbr><span><span>Tracks</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2028472273%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="can-reorder-tracks.html">canReorderTracks</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Represents whether AutomixIQ is ready to receive a reorder tracks command.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-228550608%2FProperties%2F-828240459" anchor-label="canSeek" id="-228550608%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-seek.html"><span>can</span><wbr></wbr><span><span>Seek</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-228550608%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="can-seek.html">canSeek</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Represents whether AutomixIQ is ready to receive a seek command.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="601762203%2FProperties%2F-828240459" anchor-label="canSkipToNext" id="601762203%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-skip-to-next.html"><span>can</span><wbr></wbr><span>Skip</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Next</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="601762203%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="can-skip-to-next.html">canSkipToNext</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Represents whether AutomixIQ is ready to skip to the next track.     If playing the last track of the playlist and &quot;replayOn&quot; is false, this will be false.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-862640745%2FProperties%2F-828240459" anchor-label="canSkipToPrevious" id="-862640745%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-skip-to-previous.html"><span>can</span><wbr></wbr><span>Skip</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Previous</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-862640745%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="can-skip-to-previous.html">canSkipToPrevious</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Represents whether AutomixIQ is ready to skip to a previous track.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-51423530%2FProperties%2F-828240459" anchor-label="explicitLyricsFiltering" id="-51423530%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="explicit-lyrics-filtering.html"><span>explicit</span><wbr></wbr><span>Lyrics</span><wbr></wbr><span><span>Filtering</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-51423530%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="explicit-lyrics-filtering.html">explicitLyricsFiltering</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Represents whether AutomixIQ is filtering explicit tracks. True if the filter is on, false otherwise</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="377534348%2FProperties%2F-828240459" anchor-label="failedTrackLoadIdentifiers" id="377534348%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="failed-track-load-identifiers.html"><span>failed</span><wbr></wbr><span>Track</span><wbr></wbr><span>Load</span><wbr></wbr><span><span>Identifiers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="377534348%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="failed-track-load-identifiers.html">failedTrackLoadIdentifiers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Represents the set of track identifiers that have failed to load for any reason</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1872242593%2FProperties%2F-828240459" anchor-label="mixId" id="1872242593%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mix-id.html"><span>mix</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1872242593%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="mix-id.html">mixId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">Represents a unique mix identifier as an integer</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="568566076%2FProperties%2F-828240459" anchor-label="mixing" id="568566076%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mixing.html"><span><span>mixing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="568566076%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="mixing.html">mixing</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Represents if more than one track is concurrently playing from AutomixIQ (mixing), true if it is, false otherwise.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-521104051%2FProperties%2F-828240459" anchor-label="muted" id="-521104051%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="muted.html"><span><span>muted</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-521104051%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="muted.html">muted</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Represents whether AutomixIQ is muted or not. True if muted, false otherwise.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1214946726%2FProperties%2F-828240459" anchor-label="nextTransitionDuration" id="1214946726%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="next-transition-duration.html"><span>next</span><wbr></wbr><span>Transition</span><wbr></wbr><span><span>Duration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1214946726%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="next-transition-duration.html">nextTransitionDuration</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.0f</span></div><div class="brief "><p class="paragraph">Represents the duration of the upcoming transition, 0 if no transition is available</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-868146280%2FProperties%2F-828240459" anchor-label="normalisedVolume" id="-868146280%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="normalised-volume.html"><span>normalised</span><wbr></wbr><span><span>Volume</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-868146280%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="normalised-volume.html">normalisedVolume</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.7f</span></div><div class="brief "><p class="paragraph">Represents the volume from 0 to 1.     Note the device's volume acts as a master over this one: if the device's volume is 0, no sound will be put out regardless of this value.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-576286172%2FProperties%2F-828240459" anchor-label="playbackMode" id="-576286172%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playback-mode.html"><span>playback</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-576286172%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playback-mode.html">playbackMode</a><span class="token operator">: </span><a href="../-automix-i-q-playback-mode/index.html">AutomixIQPlaybackMode</a></div><div class="brief "><p class="paragraph">Informs whether you are playing regular Automix, Live or Live creation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1683747542%2FProperties%2F-828240459" anchor-label="playing" id="-1683747542%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playing.html"><span><span>playing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1683747542%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playing.html">playing</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Represents if sound is playing from AutomixIQ, true if it is, false otherwise.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1498219057%2FProperties%2F-828240459" anchor-label="playingTrackCurrentTime" id="-1498219057%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playing-track-current-time.html"><span>playing</span><wbr></wbr><span>Track</span><wbr></wbr><span>Current</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1498219057%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playing-track-current-time.html">playingTrackCurrentTime</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Represents the current playback time of the playing track.     If seeking, it reports seek landing time until jump is complete. This should be used on the UI.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1455807236%2FProperties%2F-828240459" anchor-label="playingTrackIdentifier" id="-1455807236%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playing-track-identifier.html"><span>playing</span><wbr></wbr><span>Track</span><wbr></wbr><span><span>Identifier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1455807236%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playing-track-identifier.html">playingTrackIdentifier</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><p class="paragraph">Represents the identifier of the current playing track if not mixing or the front track of the two while mixing.     This would be the track identifier a UI needs to show as playing or active.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1956749213%2FProperties%2F-828240459" anchor-label="playingTrackIndex" id="-1956749213%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playing-track-index.html"><span>playing</span><wbr></wbr><span>Track</span><wbr></wbr><span><span>Index</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1956749213%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playing-track-index.html">playingTrackIndex</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Represents the position of the current playing track in the playlist if not mixing or the front track of the two while mixing.     This would be the track index a UI needs to show as playing or active.     If seeking, it reports seek landing track index until jump is complete. This should be used on the UI.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-349215371%2FProperties%2F-828240459" anchor-label="playingTrackOriginalSessionId" id="-349215371%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playing-track-original-session-id.html"><span>playing</span><wbr></wbr><span>Track</span><wbr></wbr><span>Original</span><wbr></wbr><span>Session</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-349215371%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playing-track-original-session-id.html">playingTrackOriginalSessionId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><p class="paragraph">Represents the original session id of the currently playing track</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="263838502%2FProperties%2F-828240459" anchor-label="playingTrackStreamingProgress" id="263838502%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playing-track-streaming-progress.html"><span>playing</span><wbr></wbr><span>Track</span><wbr></wbr><span>Streaming</span><wbr></wbr><span><span>Progress</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="263838502%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playing-track-streaming-progress.html">playingTrackStreamingProgress</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.0f</span></div><div class="brief "><p class="paragraph">Represents the buffering progress of the playing track. Value from 0 to 1.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1987479012%2FProperties%2F-828240459" anchor-label="playingTrackTotalTime" id="1987479012%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playing-track-total-time.html"><span>playing</span><wbr></wbr><span>Track</span><wbr></wbr><span>Total</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1987479012%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playing-track-total-time.html">playingTrackTotalTime</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Represents the total playback time of the playing track.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1346804816%2FProperties%2F-828240459" anchor-label="playlist" id="-1346804816%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playlist.html"><span><span>playlist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1346804816%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playlist.html">playlist</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Represents the list of track identifiers in the order they will be played</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1174751829%2FProperties%2F-828240459" anchor-label="playlistDiff" id="-1174751829%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playlist-diff.html"><span>playlist</span><wbr></wbr><span><span>Diff</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1174751829%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playlist-diff.html">playlistDiff</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-automix-i-q-playlist-operation/index.html">AutomixIQPlaylistOperation</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><p class="paragraph">Represents the set of playlist operations that happened in this update</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="305558725%2FProperties%2F-828240459" anchor-label="playSpeed" id="305558725%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="play-speed.html"><span>play</span><wbr></wbr><span><span>Speed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="305558725%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="play-speed.html">playSpeed</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">1.0f</span></div><div class="brief "><p class="paragraph">Represents the playSpeed from 0.5 to 2 with 0.5 being half speed, 2 being double.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2015894509%2FProperties%2F-828240459" anchor-label="preferredTransitionDurationSeconds" id="2015894509%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="preferred-transition-duration-seconds.html"><span>preferred</span><wbr></wbr><span>Transition</span><wbr></wbr><span>Duration</span><wbr></wbr><span><span>Seconds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2015894509%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="preferred-transition-duration-seconds.html">preferredTransitionDurationSeconds</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.0f</span></div><div class="brief "><p class="paragraph">Represents the preferred AutomixIQ transition duration, set the value to 0 to allow AutomixIQ to automatically decide the duration.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-360611706%2FProperties%2F-828240459" anchor-label="readyToPlay" id="-360611706%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ready-to-play.html"><span>ready</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Play</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-360611706%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="ready-to-play.html">readyToPlay</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Represents whether AutomixIQ is ready to play or currently loading.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1327069148%2FProperties%2F-828240459" anchor-label="replayOn" id="1327069148%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="replay-on.html"><span>replay</span><wbr></wbr><span><span>On</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1327069148%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="replay-on.html">replayOn</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Represents whether AutomixIQ will replay the current playlist when it ends.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1934949312%2FProperties%2F-828240459" anchor-label="requestedLoopTrackIdentifier" id="-1934949312%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="requested-loop-track-identifier.html"><span>requested</span><wbr></wbr><span>Loop</span><wbr></wbr><span>Track</span><wbr></wbr><span><span>Identifier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1934949312%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="requested-loop-track-identifier.html">requestedLoopTrackIdentifier</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><p class="paragraph">Represents the track identifier AutomixIQ is currently looping, null if none is looping.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1195268916%2FProperties%2F-828240459" anchor-label="requestedPauseTrackIdentifier" id="-1195268916%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="requested-pause-track-identifier.html"><span>requested</span><wbr></wbr><span>Pause</span><wbr></wbr><span>Track</span><wbr></wbr><span><span>Identifier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1195268916%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="requested-pause-track-identifier.html">requestedPauseTrackIdentifier</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><p class="paragraph">Represents the track AutomixIQ is currently flagged to be paused at the end, null if none is.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1287890691%2FProperties%2F-828240459" anchor-label="transitionStartTimeSeconds" id="-1287890691%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="transition-start-time-seconds.html"><span>transition</span><wbr></wbr><span>Start</span><wbr></wbr><span>Time</span><wbr></wbr><span><span>Seconds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1287890691%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="transition-start-time-seconds.html">transitionStartTimeSeconds</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.0f</span></div><div class="brief "><p class="paragraph">Represents the track time in seconds in which the next (or current) transition starts</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2106865548%2FProperties%2F-828240459" anchor-label="vinylStartStop" id="2106865548%2FProperties%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="vinyl-start-stop.html"><span>vinyl</span><wbr></wbr><span>Start</span><wbr></wbr><span><span>Stop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2106865548%2FProperties%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="vinyl-start-stop.html">vinylStartStop</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></div><div class="brief "><p class="paragraph">Represents whether AutomixIQ plays a vinyl start/stop sound effect on play/pause</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1356277834%2FFunctions%2F-828240459" anchor-label="getValue" id="1356277834%2FFunctions%2F-828240459" data-filterable-set=":AutomixIQ:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AutomixIQ:dokkaHtml/release" data-filterable-set=":AutomixIQ:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-value.html"><span>get</span><wbr></wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1356277834%2FFunctions%2F-828240459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AutomixIQ:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-value.html">T</a><span class="token operator">&gt; </span><a href="get-value.html"><span class="token function">getValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">variable<span class="token operator">: </span><a href="../-automix-i-q-status-variable/index.html">AutomixIQStatusVariable</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="get-value.html">T</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

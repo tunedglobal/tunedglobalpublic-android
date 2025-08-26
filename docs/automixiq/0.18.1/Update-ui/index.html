@@ -1,0 +1,1144 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Provide seamless transitions between tracks and beat-matched seek experience within your music player application in Android.">
+      
+      
+        <meta name="author" content="Victor Garcia">
+      
+      
+      
+        <link rel="prev" href="../Control-playback/">
+      
+      
+        <link rel="next" href="../Player-setting/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Update UI - AutomixIQ</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#update-ui" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AutomixIQ" class="md-header__button md-logo" aria-label="AutomixIQ" data-md-component="logo">
+      
+  <img src="../img/tg_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AutomixIQ
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Update UI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AutomixIQ" class="md-nav__button md-logo" aria-label="AutomixIQ" data-md-component="logo">
+      
+  <img src="../img/tg_logo.png" alt="logo">
+
+    </a>
+    AutomixIQ
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Get Started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Get Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Install-the-SDK/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install the SDK
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Configure the SDK
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Configure the SDK
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Configure-the-SDK-tuned/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    With Tuned Global backend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Configure-the-SDK-custom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    With custom backend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Turn-Automix-on-and-off/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Turn AutomixIQ on and off
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Control-playback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Control playback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Update UI
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Update UI
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+    <a href="#register-status-listener" class="md-nav__link">
+      <span class="md-ellipsis">
+        Register status listener
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+      
+        <li class="md-nav__item">
+    <a href="#unregister-status-listener" class="md-nav__link">
+      <span class="md-ellipsis">
+        Unregister status listener
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+      
+        <li class="md-nav__item">
+    <a href="#implement-status-listener" class="md-nav__link">
+      <span class="md-ellipsis">
+        Implement status listener
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+      
+        <li class="md-nav__item">
+    <a href="#monitor-status-update" class="md-nav__link">
+      <span class="md-ellipsis">
+        Monitor status update
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+      
+        <li class="md-nav__item">
+    <a href="#monitor-playback-event" class="md-nav__link">
+      <span class="md-ellipsis">
+        Monitor playback event
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+      
+        <li class="md-nav__item">
+    <a href="#monitor-waveform-data" class="md-nav__link">
+      <span class="md-ellipsis">
+        Monitor waveform data
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Player-setting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Player setting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Explicit-lyrics-filter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Explicit lyrics filter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Access-waveform-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Access waveform data
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Audio-file-requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Audio file requirements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Data-persistency/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data persistency
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Data-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data model
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Handle-error/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Handle error
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Change-log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Change log
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+    <a href="#register-status-listener" class="md-nav__link">
+      <span class="md-ellipsis">
+        Register status listener
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+      
+        <li class="md-nav__item">
+    <a href="#unregister-status-listener" class="md-nav__link">
+      <span class="md-ellipsis">
+        Unregister status listener
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+      
+        <li class="md-nav__item">
+    <a href="#implement-status-listener" class="md-nav__link">
+      <span class="md-ellipsis">
+        Implement status listener
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+      
+        <li class="md-nav__item">
+    <a href="#monitor-status-update" class="md-nav__link">
+      <span class="md-ellipsis">
+        Monitor status update
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+      
+        <li class="md-nav__item">
+    <a href="#monitor-playback-event" class="md-nav__link">
+      <span class="md-ellipsis">
+        Monitor playback event
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+      
+        <li class="md-nav__item">
+    <a href="#monitor-waveform-data" class="md-nav__link">
+      <span class="md-ellipsis">
+        Monitor waveform data
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="update-ui">Update UI<a class="headerlink" href="#update-ui" title="Permanent link">&para;</a></h1>
+<p>AutomixIQ provides realtime status update and playback events after the player starts playing. You can register multiple listeners to monitor the status of the player and update your UI accordingly.</p>
+<h3 id="register-status-listener">Register status listener<a class="headerlink" href="#register-status-listener" title="Permanent link">&para;</a></h3>
+<p>You can register a status listener any time after the SDK is initialised.</p>
+<div class="language-kotlin highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">AutomixIQ</span><span class="p">.</span><span class="na">getInstance</span><span class="p">()</span><span class="o">?.</span><span class="na">addStatusListener</span><span class="p">(</span><span class="n">myStatusListener</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="unregister-status-listener">Unregister status listener<a class="headerlink" href="#unregister-status-listener" title="Permanent link">&para;</a></h3>
+<p>You can unregister the listener and stop receiving status updates and events when you do not need it any more.</p>
+<div class="language-kotlin highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">AutomixIQ</span><span class="p">.</span><span class="na">getInstance</span><span class="p">()</span><span class="o">?.</span><span class="na">removeStatusListener</span><span class="p">(</span><span class="n">myStatusListener</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="implement-status-listener">Implement status listener<a class="headerlink" href="#implement-status-listener" title="Permanent link">&para;</a></h3>
+<p>Extend the <code>AutomixIQStatusListener</code> class and implement the required functions as shown below:</p>
+<ul>
+<li>onStatusChanged</li>
+<li>onPlaybackEvent</li>
+<li>onWaveformDataAvailable</li>
+</ul>
+<div class="language-kotlin highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">class</span><span class="w"> </span><span class="nc">MyStatusListener</span><span class="p">:</span><span class="w"> </span><span class="n">AutomixIQStatusListener</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">onStatusChanged</span><span class="p">(</span><span class="n">variables</span><span class="p">:</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">AutomixIQStatusVariable</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="p">:</span><span class="w"> </span><span class="n">AutomixIQStatus</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">        </span><span class="c1">// Monitor status update</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">onPlaybackEvent</span><span class="p">(</span><span class="n">type</span><span class="p">:</span><span class="w"> </span><span class="n">AutomixIQPlaybackEventType</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">                                 </span><span class="n">identifier</span><span class="p">:</span><span class="w"> </span><span class="kt">String?</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">                                 </span><span class="n">originalSessionId</span><span class="p">:</span><span class="w"> </span><span class="kt">String?</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">                                 </span><span class="n">status</span><span class="p">:</span><span class="w"> </span><span class="n">AutomixIQStatus?)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">        </span><span class="c1">// Monitor playback event</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">onWaveformDataAvailable</span><span class="p">(</span><span class="n">identifier</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">        </span><span class="c1">// Monitor waveform data availability</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="monitor-status-update">Monitor status update<a class="headerlink" href="#monitor-status-update" title="Permanent link">&para;</a></h3>
+<p>AutomixIQ reports the player status every time it is updated. You can get the current player status from the <code>AutomixIQStatus</code> object and the list of <code>AutomixIQStatusVariable</code> that gets updated since the last time a <code>onStatusChanged</code> is invoked. Use the value of each <code>AutomixIQStatusVariable</code> to update your player UI.</p>
+<p>For details of each status field, see <a href="../automixiq/dokka/html/-automix-i-q/com.tunedglobal.automix.model/-automix-i-q-status/"><code>AutomixIQStatus</code></a> and <a href="../automixiq/dokka/html/-automix-i-q/com.tunedglobal.automix.model/-automix-i-q-status-variable/"><code>AutomixIQStatusVariable</code></a></p>
+<div class="language-kotlin highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">var</span><span class="w"> </span><span class="nv">latestStatus</span><span class="p">:</span><span class="w"> </span><span class="n">AutomixIQStatus? </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">onStatusChanged</span><span class="p">(</span><span class="n">variables</span><span class="p">:</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">AutomixIQStatusVariable</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="p">:</span><span class="w"> </span><span class="n">AutomixIQStatus</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="c1">// Monitor status update</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">latestStatus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">status</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">property</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">variables</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">    </span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span><span class="k">when</span><span class="w"> </span><span class="p">(</span><span class="n">property</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">            </span><span class="n">AutomixIQStatusVariable</span><span class="p">.</span><span class="na">PLAYING</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">                </span><span class="c1">// Change the look and feel of your Play/Pause button here</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">                </span><span class="kd">val</span><span class="w"> </span><span class="nv">playing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">status</span><span class="p">.</span><span class="na">playing</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">                </span><span class="c1">// ...</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">            </span><span class="n">AutomixIQStatusVariable</span><span class="p">.</span><span class="na">MIXING</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">            </span><span class="n">AutomixIQStatusVariable</span><span class="p">.</span><span class="na">PLAYING_TRACK_IDENTIFIER</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">            </span><span class="n">AutomixIQStatusVariable</span><span class="p">.</span><span class="na">PLAYING_TRACK_INDEX</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">            </span><span class="n">AutomixIQStatusVariable</span><span class="p">.</span><span class="na">PLAYING_TRACK_CURRENT_TIME</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">                </span><span class="c1">// Change your track progress UI here </span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">                </span><span class="kd">val</span><span class="w"> </span><span class="nv">elapsedTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">status</span><span class="p">.</span><span class="na">playingTrackCurrentTime</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">                </span><span class="kd">val</span><span class="w"> </span><span class="nv">totalTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">status</span><span class="p">.</span><span class="na">playingTrackTotalTime</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">                </span><span class="c1">// ...</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">            </span><span class="n">AutomixIQStatusVariable</span><span class="p">.</span><span class="na">PLAYING_TRACK_STREAMING_PROGRESS</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">            </span><span class="n">AutomixIQStatusVariable</span><span class="p">.</span><span class="na">PLAYING_TRACK_TOTAL_TIME</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">                </span><span class="c1">// Change your track progress UI here </span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">                </span><span class="kd">val</span><span class="w"> </span><span class="nv">elapsedTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">status</span><span class="p">.</span><span class="na">playingTrackCurrentTime</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">                </span><span class="kd">val</span><span class="w"> </span><span class="nv">totalTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">status</span><span class="p">.</span><span class="na">playingTrackTotalTime</span>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">                </span><span class="c1">// ...</span>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">            </span><span class="n">AutomixIQStatusVariable</span><span class="p">.</span><span class="na">CAN_SKIP_TO_PREVIOUS</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">                </span><span class="c1">// Change the look and feel of your previous button here</span>
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">                </span><span class="kd">val</span><span class="w"> </span><span class="nv">canSkipToPrevious</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">status</span><span class="p">.</span><span class="na">canSkipToPrevious</span>
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">                </span><span class="c1">// ...</span>
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="w">            </span><span class="n">AutomixIQStatusVariable</span><span class="p">.</span><span class="na">CAN_SKIP_TO_NEXT</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">                </span><span class="c1">// Change the look and feel of your next button here</span>
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="w">                </span><span class="kd">val</span><span class="w"> </span><span class="nv">canSkipToNext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">status</span><span class="p">.</span><span class="na">canSkipToNext</span>
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="w">                </span><span class="c1">// ...</span>
+</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="w">            </span><span class="n">AutomixIQStatusVariable</span><span class="p">.</span><span class="na">CAN_PLAY_PAUSE</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="w">                </span><span class="c1">// Change the look and feel of your play/pause button here</span>
+</span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a><span class="w">                </span><span class="kd">val</span><span class="w"> </span><span class="nv">canPlayPause</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">status</span><span class="p">.</span><span class="na">canPlayPause</span>
+</span><span id="__span-3-44"><a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a><span class="w">                </span><span class="c1">// ...</span>
+</span><span id="__span-3-45"><a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-3-46"><a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a><span class="w">            </span><span class="n">AutomixIQStatusVariable</span><span class="p">.</span><span class="na">CAN_SEEK</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-3-47"><a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a><span class="w">            </span><span class="n">AutomixIQStatusVariable</span><span class="p">.</span><span class="na">CAN_REORDER_TRACKS</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-3-48"><a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a><span class="w">            </span><span class="n">AutomixIQStatusVariable</span><span class="p">.</span><span class="na">REPLAY_ON</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-49"><a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a><span class="w">                </span><span class="c1">// Change the look and feel of your replay button here</span>
+</span><span id="__span-3-50"><a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a><span class="w">                </span><span class="kd">val</span><span class="w"> </span><span class="nv">replayOn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">status</span><span class="p">.</span><span class="na">replayOn</span>
+</span><span id="__span-3-51"><a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a><span class="w">                </span><span class="c1">// ...</span>
+</span><span id="__span-3-52"><a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-3-53"><a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a>
+</span><span id="__span-3-54"><a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a><span class="w">            </span><span class="c1">// ...</span>
+</span><span id="__span-3-55"><a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a><span class="w">            </span><span class="c1">// More `AutomixIQStatusVariable` enums can be found in API reference</span>
+</span><span id="__span-3-56"><a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-3-57"><a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-58"><a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>A helper function have been created to help you easily get the value of specific <code>AutomixIQStatusVariable</code> from <code>AutomixIQStatus</code></p>
+<div class="language-kotlin highlight"><span class="filename">Get value for AutomixIQStatusVariable</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">AutomixIQStatus</span><span class="p">.</span><span class="na">getValue</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">AutomixIQStatusVariable</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="monitor-playback-event">Monitor playback event<a class="headerlink" href="#monitor-playback-event" title="Permanent link">&para;</a></h3>
+<p>Certain predefined playback events will be returned during playback to help with reporting.</p>
+<p>For details of each playback event, see <a href="../automixiq/dokka/html/-automix-i-q/com.tunedglobal.automix.model/-automix-i-q-playback-event-type/"><code>AutomixIQPlaybackEventType</code></a></p>
+<div class="language-kotlin highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">onPlaybackEvent</span><span class="p">(</span><span class="n">type</span><span class="p">:</span><span class="w"> </span><span class="n">AutomixIQPlaybackEventType</span><span class="p">,</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">                             </span><span class="n">identifier</span><span class="p">:</span><span class="w"> </span><span class="kt">String?</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">                             </span><span class="n">originalSessionId</span><span class="p">:</span><span class="w"> </span><span class="kt">String?</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">                             </span><span class="n">status</span><span class="p">:</span><span class="w"> </span><span class="n">AutomixIQStatus?)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="c1">// Monitor playback event</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="k">when</span><span class="w"> </span><span class="p">(</span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">        </span><span class="n">AutomixIQPlaybackEventType</span><span class="p">.</span><span class="na">TRACK_PLAY_START</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">        </span><span class="n">AutomixIQPlaybackEventType</span><span class="p">.</span><span class="na">TRACK_PLAY_PLAYED_5_SECS</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">        </span><span class="n">AutomixIQPlaybackEventType</span><span class="p">.</span><span class="na">TRACK_PLAY_HEARTBEAT_30_SECS</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">        </span><span class="n">AutomixIQPlaybackEventType</span><span class="p">.</span><span class="na">TRACK_PLAY_START_MIXING_INTO_NEXT</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">        </span><span class="n">AutomixIQPlaybackEventType</span><span class="p">.</span><span class="na">TRACK_PLAY_SKIPPED</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">        </span><span class="n">AutomixIQPlaybackEventType</span><span class="p">.</span><span class="na">TRACK_PLAY_FINISHED</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">        </span><span class="n">AutomixIQPlaybackEventType</span><span class="p">.</span><span class="na">MIX_PLAYBACK_ENDED</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="monitor-waveform-data">Monitor waveform data<a class="headerlink" href="#monitor-waveform-data" title="Permanent link">&para;</a></h3>
+<p>When the waveform data for a track is ready, AutomixIQ will invoke <code>onWaveformDataAvailable</code>. See <a href="../Access-waveform-data/">Access waveform data</a>.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 23, 2025 13:37:33 UTC">April 23, 2025</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["toc.follow", "navigation.sections", "navigation.expand", "content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

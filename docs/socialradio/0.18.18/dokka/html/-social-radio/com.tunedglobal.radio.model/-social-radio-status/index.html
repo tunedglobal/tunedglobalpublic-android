@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SocialRadioStatus</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            SocialRadio
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":SocialRadio:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="SocialRadio::com.tunedglobal.radio.model/SocialRadioStatus///PointingToDeclaration//722505166">
+  <div class="breadcrumbs"><a href="../../../index.html">SocialRadio</a><span class="delimiter">/</span><a href="../index.html">com.tunedglobal.radio.model</a><span class="delimiter">/</span><span class="current">SocialRadioStatus</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Social</span><wbr></wbr><span>Radio</span><wbr></wbr><span><span>Status</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">SocialRadioStatus</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>playing<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>mixing<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playingTrackIdentifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playingTrackIndex<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playingTrackCurrentTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playingTrackTotalTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playlist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>failedTrackLoadIdentifiers<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>explicitLyricsFiltering<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>mixId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>playbackMode<span class="token operator">: </span><span data-unresolved-link="com.tunedglobal.automixcommon.model.tuned/TunedAutomixPlaybackMode///PointingToDeclaration/">TunedAutomixPlaybackMode</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">SocialRadioStatus models the state of the SocialRadio during playback.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-169915962%2FConstructors%2F722505166" anchor-label="SocialRadioStatus" id="-169915962%2FConstructors%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-social-radio-status.html"><span>Social</span><wbr></wbr><span>Radio</span><wbr></wbr><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-169915962%2FConstructors%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">playing<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">mixing<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">playingTrackIdentifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">playingTrackIndex<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">playingTrackCurrentTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">playingTrackTotalTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">playlist<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">failedTrackLoadIdentifiers<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">explicitLyricsFiltering<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">mixId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">playbackMode<span class="token operator">: </span><span data-unresolved-link="com.tunedglobal.automixcommon.model.tuned/TunedAutomixPlaybackMode///PointingToDeclaration/">TunedAutomixPlaybackMode</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1349366097%2FProperties%2F722505166" anchor-label="explicitLyricsFiltering" id="-1349366097%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="explicit-lyrics-filtering.html"><span>explicit</span><wbr></wbr><span>Lyrics</span><wbr></wbr><span><span>Filtering</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1349366097%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="explicit-lyrics-filtering.html">explicitLyricsFiltering</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Represents whether AutomixIQ is filtering explicit tracks. True if the filter is on, false otherwise</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="961086739%2FProperties%2F722505166" anchor-label="failedTrackLoadIdentifiers" id="961086739%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="failed-track-load-identifiers.html"><span>failed</span><wbr></wbr><span>Track</span><wbr></wbr><span>Load</span><wbr></wbr><span><span>Identifiers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="961086739%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="failed-track-load-identifiers.html">failedTrackLoadIdentifiers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Represents the set of track identifiers that have failed to load for any reason</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-136670278%2FProperties%2F722505166" anchor-label="mixId" id="-136670278%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mix-id.html"><span>mix</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-136670278%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="mix-id.html">mixId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">Represents a unique mix identifier as an integer</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1578190781%2FProperties%2F722505166" anchor-label="mixing" id="-1578190781%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mixing.html"><span><span>mixing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1578190781%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="mixing.html">mixing</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Represents if more than one track is concurrently playing from AutomixIQ (mixing), true if it is, false otherwise.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="185599979%2FProperties%2F722505166" anchor-label="playbackMode" id="185599979%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playback-mode.html"><span>playback</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="185599979%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playback-mode.html">playbackMode</a><span class="token operator">: </span><span data-unresolved-link="com.tunedglobal.automixcommon.model.tuned/TunedAutomixPlaybackMode///PointingToDeclaration/">TunedAutomixPlaybackMode</span></div><div class="brief "><p class="paragraph">Informs whether you are playing regular Automix, Live or Live creation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="486266627%2FProperties%2F722505166" anchor-label="playing" id="486266627%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playing.html"><span><span>playing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="486266627%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playing.html">playing</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Represents if sound is playing from AutomixIQ, true if it is, false otherwise.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1498805672%2FProperties%2F722505166" anchor-label="playingTrackCurrentTime" id="1498805672%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playing-track-current-time.html"><span>playing</span><wbr></wbr><span>Track</span><wbr></wbr><span>Current</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1498805672%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playing-track-current-time.html">playingTrackCurrentTime</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Represents the current playback time of the playing track.     If seeking, it reports seek landing time until jump is complete. This should be used on the UI.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="719080963%2FProperties%2F722505166" anchor-label="playingTrackIdentifier" id="719080963%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playing-track-identifier.html"><span>playing</span><wbr></wbr><span>Track</span><wbr></wbr><span><span>Identifier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="719080963%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playing-track-identifier.html">playingTrackIdentifier</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Represents the identifier of the current playing track if not mixing or the front track of the two while mixing.     This would be the track identifier a UI needs to show as playing or active.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1378512636%2FProperties%2F722505166" anchor-label="playingTrackIndex" id="1378512636%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playing-track-index.html"><span>playing</span><wbr></wbr><span>Track</span><wbr></wbr><span><span>Index</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1378512636%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playing-track-index.html">playingTrackIndex</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Represents the position of the current playing track in the playlist if not mixing or the front track of the two while mixing.     This would be the track index a UI needs to show as playing or active.     If seeking, it reports seek landing track index until jump is complete. This should be used on the UI.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-990404611%2FProperties%2F722505166" anchor-label="playingTrackTotalTime" id="-990404611%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playing-track-total-time.html"><span>playing</span><wbr></wbr><span>Track</span><wbr></wbr><span>Total</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-990404611%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playing-track-total-time.html">playingTrackTotalTime</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Represents the total playback time of the playing track.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1499124983%2FProperties%2F722505166" anchor-label="playlist" id="1499124983%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playlist.html"><span><span>playlist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1499124983%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="playlist.html">playlist</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Represents the list of track identifiers in the order they will be played</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1217228220%2FFunctions%2F722505166" anchor-label="getValue" id="1217228220%2FFunctions%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-value.html"><span>get</span><wbr></wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1217228220%2FFunctions%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-value.html">T</a><span class="token operator">&gt; </span><a href="get-value.html"><span class="token function">getValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">variable<span class="token operator">: </span><a href="../-social-radio-status-variable/index.html">SocialRadioStatusVariable</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="get-value.html">T</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

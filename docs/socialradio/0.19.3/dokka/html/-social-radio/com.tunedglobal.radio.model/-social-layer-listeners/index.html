@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SocialLayerListeners</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            SocialRadio
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":SocialRadio:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="SocialRadio::com.tunedglobal.radio.model/SocialLayerListeners///PointingToDeclaration//722505166">
+  <div class="breadcrumbs"><a href="../../../index.html">SocialRadio</a><span class="delimiter">/</span><a href="../index.html">com.tunedglobal.radio.model</a><span class="delimiter">/</span><span class="current">SocialLayerListeners</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Social</span><wbr></wbr><span>Layer</span><wbr></wbr><span><span>Listeners</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">SocialLayerListeners</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>authenticationListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-authentication-listener/index.html">SocialLayerAuthenticationListener</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>userListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-user-listener/index.html">SocialLayerUserListener</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>liveMixtapeListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-live-mixtape-listener/index.html">SocialLayerLiveMixtapeListener</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>mixtapeLikesListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-mixtape-likes-listener/index.html">SocialLayerMixtapeLikesListener</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>mixtapeCommentsListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-mixtape-comments-listener/index.html">SocialLayerMixtapeCommentsListener</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>mixtapeBackgroundsListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-mixtape-backgrounds-listener/index.html">SocialLayerMixtapeBackgroundsListener</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>trackLikesListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-track-likes-listener/index.html">SocialLayerTrackLikesListener</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>moderationListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-moderation-listener/index.html">SocialLayerModerationListener</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>notificationsListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-notifications-listener/index.html">SocialLayerNotificationsListener</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><p class="paragraph">SocialLayerDelegates is an object that holds all delegates used to communicate between the SocialRadio SDK and a backend that handles storage of social interactions. 'authenticationDelegate', 'userDelegate' and 'liveMixtapeDelegate' are required always. Every other delegate can be nil and is only required if your backend and SocialRadio implementation supports the attached features, like commenting, moderation, backgrounds, etc. See each delegate's documentation for details.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-229243829%2FConstructors%2F722505166" anchor-label="SocialLayerListeners" id="-229243829%2FConstructors%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-social-layer-listeners.html"><span>Social</span><wbr></wbr><span>Layer</span><wbr></wbr><span><span>Listeners</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-229243829%2FConstructors%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">authenticationListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-authentication-listener/index.html">SocialLayerAuthenticationListener</a><span class="token punctuation">, </span></span><span class="parameter ">userListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-user-listener/index.html">SocialLayerUserListener</a><span class="token punctuation">, </span></span><span class="parameter ">liveMixtapeListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-live-mixtape-listener/index.html">SocialLayerLiveMixtapeListener</a><span class="token punctuation">, </span></span><span class="parameter ">mixtapeLikesListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-mixtape-likes-listener/index.html">SocialLayerMixtapeLikesListener</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">mixtapeCommentsListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-mixtape-comments-listener/index.html">SocialLayerMixtapeCommentsListener</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">mixtapeBackgroundsListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-mixtape-backgrounds-listener/index.html">SocialLayerMixtapeBackgroundsListener</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">trackLikesListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-track-likes-listener/index.html">SocialLayerTrackLikesListener</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">moderationListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-moderation-listener/index.html">SocialLayerModerationListener</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">notificationsListener<span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-notifications-listener/index.html">SocialLayerNotificationsListener</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-161608958%2FProperties%2F722505166" anchor-label="authenticationListener" id="-161608958%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="authentication-listener.html"><span>authentication</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-161608958%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="authentication-listener.html">authenticationListener</a><span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-authentication-listener/index.html">SocialLayerAuthenticationListener</a></div><div class="brief "><p class="paragraph">Handles communication between SocialRadio SDK and a backend regarding authentication</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1672378694%2FProperties%2F722505166" anchor-label="liveMixtapeListener" id="1672378694%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="live-mixtape-listener.html"><span>live</span><wbr></wbr><span>Mixtape</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1672378694%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="live-mixtape-listener.html">liveMixtapeListener</a><span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-live-mixtape-listener/index.html">SocialLayerLiveMixtapeListener</a></div><div class="brief "><p class="paragraph">Handles communication between SocialRadio SDK and a backend regarding live mixtapes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1235340851%2FProperties%2F722505166" anchor-label="mixtapeBackgroundsListener" id="1235340851%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mixtape-backgrounds-listener.html"><span>mixtape</span><wbr></wbr><span>Backgrounds</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1235340851%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="mixtape-backgrounds-listener.html">mixtapeBackgroundsListener</a><span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-mixtape-backgrounds-listener/index.html">SocialLayerMixtapeBackgroundsListener</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Handles communication between SocialRadio SDK and a backend regarding mixtape backgrounds.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1153126182%2FProperties%2F722505166" anchor-label="mixtapeCommentsListener" id="1153126182%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mixtape-comments-listener.html"><span>mixtape</span><wbr></wbr><span>Comments</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1153126182%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="mixtape-comments-listener.html">mixtapeCommentsListener</a><span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-mixtape-comments-listener/index.html">SocialLayerMixtapeCommentsListener</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Handles communication between SocialRadio SDK and a backend regarding commenting a mixtape.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1539924580%2FProperties%2F722505166" anchor-label="mixtapeLikesListener" id="-1539924580%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mixtape-likes-listener.html"><span>mixtape</span><wbr></wbr><span>Likes</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1539924580%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="mixtape-likes-listener.html">mixtapeLikesListener</a><span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-mixtape-likes-listener/index.html">SocialLayerMixtapeLikesListener</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Handles communication between SocialRadio SDK and a backend regarding liking and unliking a mixtape.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-181483884%2FProperties%2F722505166" anchor-label="moderationListener" id="-181483884%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="moderation-listener.html"><span>moderation</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-181483884%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="moderation-listener.html">moderationListener</a><span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-moderation-listener/index.html">SocialLayerModerationListener</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Handles communication between SocialRadio SDK and a backend regarding content moderation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="686433872%2FProperties%2F722505166" anchor-label="notificationsListener" id="686433872%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="notifications-listener.html"><span>notifications</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="686433872%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="notifications-listener.html">notificationsListener</a><span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-notifications-listener/index.html">SocialLayerNotificationsListener</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Handles communication between SocialRadio SDK and a backend regarding notifications.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1095884823%2FProperties%2F722505166" anchor-label="trackLikesListener" id="-1095884823%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="track-likes-listener.html"><span>track</span><wbr></wbr><span>Likes</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1095884823%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="track-likes-listener.html">trackLikesListener</a><span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-track-likes-listener/index.html">SocialLayerTrackLikesListener</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Handles communication between SocialRadio SDK and a backend regarding liking and unliking a track.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1058952881%2FProperties%2F722505166" anchor-label="userListener" id="-1058952881%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="user-listener.html"><span>user</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1058952881%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="user-listener.html">userListener</a><span class="token operator">: </span><a href="../../com.tunedglobal.radio.listeners.social/-social-layer-user-listener/index.html">SocialLayerUserListener</a></div><div class="brief "><p class="paragraph">Handles communication between SocialRadio SDK and a backend regarding users.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

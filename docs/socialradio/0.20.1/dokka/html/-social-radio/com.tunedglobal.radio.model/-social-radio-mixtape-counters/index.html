@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SocialRadioMixtapeCounters</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            SocialRadio
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":SocialRadio:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="SocialRadio::com.tunedglobal.radio.model/SocialRadioMixtapeCounters///PointingToDeclaration//722505166">
+  <div class="breadcrumbs"><a href="../../../index.html">SocialRadio</a><span class="delimiter">/</span><a href="../index.html">com.tunedglobal.radio.model</a><span class="delimiter">/</span><span class="current">SocialRadioMixtapeCounters</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Social</span><wbr></wbr><span>Radio</span><wbr></wbr><span>Mixtape</span><wbr></wbr><span><span>Counters</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">SocialRadioMixtapeCounters</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>plays<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>likes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>remixes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>reposts<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>comments<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>branchDepth<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>branchPosition<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>recommendations<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>mlScore<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span> : <a href="../-social-radio-j-son-serializable/index.html">SocialRadioJSonSerializable</a></div><p class="paragraph">AutomixSDKMixtapeCounters models the set of counters for information about a mixtape</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="84193263%2FConstructors%2F722505166" anchor-label="SocialRadioMixtapeCounters" id="84193263%2FConstructors%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-social-radio-mixtape-counters.html"><span>Social</span><wbr></wbr><span>Radio</span><wbr></wbr><span>Mixtape</span><wbr></wbr><span><span>Counters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="84193263%2FConstructors%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">plays<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">likes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">remixes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">reposts<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">comments<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">branchDepth<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">branchPosition<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">recommendations<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">mlScore<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1362866945%2FProperties%2F722505166" anchor-label="branchDepth" id="-1362866945%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="branch-depth.html"><span>branch</span><wbr></wbr><span><span>Depth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1362866945%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="branch-depth.html">branchDepth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The depth of this mixtape in the remix tree of this mixtape</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-189965841%2FProperties%2F722505166" anchor-label="branchPosition" id="-189965841%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="branch-position.html"><span>branch</span><wbr></wbr><span><span>Position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-189965841%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="branch-position.html">branchPosition</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The position of this mixtape in the remix tree of this mixtape</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1035601210%2FProperties%2F722505166" anchor-label="comments" id="-1035601210%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="comments.html"><span><span>comments</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1035601210%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="comments.html">comments</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The number of times this mixtape has been commented on</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-462435804%2FProperties%2F722505166" anchor-label="likes" id="-462435804%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="likes.html"><span><span>likes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-462435804%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="likes.html">likes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The number of times this mixtape has been liked</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2136102707%2FProperties%2F722505166" anchor-label="mlScore" id="-2136102707%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ml-score.html"><span>ml</span><wbr></wbr><span><span>Score</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2136102707%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="ml-score.html">mlScore</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The likelyhood this mixtape will be liked according to some ML model</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1966943105%2FProperties%2F722505166" anchor-label="plays" id="1966943105%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="plays.html"><span><span>plays</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1966943105%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="plays.html">plays</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The number of times this mixtape has been played</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2116688890%2FProperties%2F722505166" anchor-label="recommendations" id="-2116688890%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="recommendations.html"><span><span>recommendations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2116688890%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="recommendations.html">recommendations</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The number of times this mixtape has been recommended</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1221077961%2FProperties%2F722505166" anchor-label="remixes" id="1221077961%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remixes.html"><span><span>remixes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1221077961%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="remixes.html">remixes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The number of times this mixtape has been remixed</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-363306976%2FProperties%2F722505166" anchor-label="reposts" id="-363306976%2FProperties%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reposts.html"><span><span>reposts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-363306976%2FProperties%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="reposts.html">reposts</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The number of times this mixtape has been reposted</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1116102506%2FFunctions%2F722505166" anchor-label="json" id="-1116102506%2FFunctions%2F722505166" data-filterable-set=":SocialRadio:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":SocialRadio:dokkaHtml/release" data-filterable-set=":SocialRadio:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-social-radio-j-son-serializable/json.html"><span><span>json</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1116102506%2FFunctions%2F722505166"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":SocialRadio:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-social-radio-j-son-serializable/json.html"><span class="token function">json</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2026 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
